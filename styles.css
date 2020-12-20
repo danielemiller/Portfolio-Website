@@ -198,6 +198,7 @@
   }
   
   .hero__container {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -254,6 +255,26 @@
     -moz-text-fill-color: transparent;
   }
   
+  .hero__content {
+    font-size: 1.5rem;
+    background-color: #fe3b6f;
+    background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin: 20px auto;
+  }
+
+  .hero__content span {
+    background-color: #fff;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;  }
+
   .highlight {
     border-bottom: 4px solid rgb(132, 0, 255);
   }
@@ -327,8 +348,9 @@
   
   .main__content p {
     margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 75;
+    line-height: 1.25rem;
   }
   
   .main__btn {
@@ -385,8 +407,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: #fff;
     background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  }
+
+  .main__img--card img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 10px;
+    transition: 0.3s ease-in;
+  }
+
+  .main__img--card img:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
   }
   
   .fa-layer-group,
@@ -510,6 +546,7 @@
     justify-content: center;
     color: #fff;
     background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    filter: brightness(70%);
     transition: 0.3s ease-in;
   }
   
@@ -572,6 +609,7 @@
   .services__card:hover {
     transform: scale(1.075);
     transition: 0.3s ease-in;
+    filter: brightness(100%);
     cursor: pointer;
   }
   
