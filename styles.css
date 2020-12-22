@@ -517,7 +517,7 @@
   
   .projects__card {
     margin: 10px;
-    height: 30rem;
+    height: 30  rem;
     width: 300px;
     border-radius: 4px;
     display: flex;
