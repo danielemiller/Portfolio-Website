@@ -517,7 +517,7 @@
   
   .projects__card {
     margin: 10px;
-    height: 425px;
+    height: 30rem;
     width: 300px;
     border-radius: 4px;
     display: flex;
@@ -591,6 +591,12 @@
     font-size: 20px;
   }
   
+  .projects__gif--container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
   .projects__btn {
     display: flex;
     justify-content: center;
