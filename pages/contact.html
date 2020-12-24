@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./contact.css">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <title>Document</title>
   </head>
   <body>
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="#home" id="navbar__logo">Daniel Miller</a>
+            <a href="../index.html" id="navbar__logo">Daniel Miller</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -18,45 +19,46 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                    <a href="../index.html" class="navbar__links" id="home-page">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#about" class="navbar__links" id="about-page">About</a>
+                    <a href="../index.html#about" class="navbar__links" id="about-page">About</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#projects" class="navbar__links" id="projects-page">Projects</a>
+                    <a href="../index.html#projects" class="navbar__links" id="projects-page">Projects</a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="#contact" class="button" id="contact-page">Get in Touch</a>
+                    <a href="#" class="button" id="contact-page">Get in Touch</a>
                 </li>
             </ul>
         </div> 
     </nav>
     <h1 class="contact__header">I'd love to hear from you!</h1>
     <div class="wrapper centered">
-      <article class="letter">
+      <form action="https://formspree.io/f/xeqppkjb" method="POST" class="letter">
         <div class="side">
           <h1>Contact Me</h1>
           <p>
-            <textarea placeholder="Your message"></textarea>
+            <textarea required placeholder="Your message" name="message"></textarea>
           </p>
         </div>
         <div class="side">
           <p>
-            <input type="text" placeholder="Your name" />
+            <input required type="text" placeholder="Your name" name="name"/>
           </p>
           <p>
-            <input type="email" placeholder="Your email" />
+            <input required type="email" placeholder="Your email" name="email" />
           </p>
           <p>
-            <button id="sendLetter">Send</button>
+            <button type="submit" id="sendLetter">Send</button>
           </p>
         </div>
-      </article>
+      </form>
       <div class="envelope front"></div>
       <div class="envelope back"></div>
     </div>
     <p class="result-message centered">Thank you for your message</p>
     <script src="./contact.js"></script>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
   </body>
 </html>
