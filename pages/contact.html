@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="../styles.css">
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">Daniel Miller</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#projects" class="navbar__links" id="projects-page">Projects</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#contact" class="button" id="contact-page">Get in Touch</a>
+                </li>
+            </ul>
+        </div> 
+    </nav>
+    <h1 class="contact__header">I'd love to hear from you!</h1>
+    <div class="wrapper centered">
+      <article class="letter">
+        <div class="side">
+          <h1>Contact Me</h1>
+          <p>
+            <textarea placeholder="Your message"></textarea>
+          </p>
+        </div>
+        <div class="side">
+          <p>
+            <input type="text" placeholder="Your name" />
+          </p>
+          <p>
+            <input type="email" placeholder="Your email" />
+          </p>
+          <p>
+            <button id="sendLetter">Send</button>
+          </p>
+        </div>
+      </article>
+      <div class="envelope front"></div>
+      <div class="envelope back"></div>
+    </div>
+    <p class="result-message centered">Thank you for your message</p>
+    <script src="./contact.js"></script>
+  </body>
 </html>
