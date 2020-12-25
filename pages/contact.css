@@ -29,6 +29,11 @@ h1 {
   font-family: 'Dancing Script';
 }
 
+p button {
+  -webkit-text-fill-color:rgb(16, 123, 216);
+  -mo-text-fill-color: transparent;
+}
+
 small {
   display: block;
   padding: 1rem 0;
@@ -266,3 +271,87 @@ textarea:focus {
 }
 */
 
+@media screen and (max-width: 768){
+
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 480px) {
+  .contact__header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 3.5rem 0;
+}
+
+  .wrapper {
+    width: 100%;
+    background-color: white;
+  }
+  
+  .letter {
+    position:absolute;
+    top: 0;
+    bottom: 10px;
+    width: 85%;
+    margin: .25rem 1.75rem;
+    perspective: 60rem;
+
+  }
+  .side {
+    height: 10rem;
+    background-color: #fcfcf8;
+    outline: 1px solid transparent;
+  }
+  
+  .side:nth-of-type(1) {
+
+    }
+  .side:nth-of-type(2) {
+      padding-bottom: 10rem;
+    }
+
+  .envelope {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 1.5rem 7rem;
+  }
+
+  .envelope.front {
+    width: 10rem;
+    height: 6rem;
+  }
+
+  .envelope.front::before, .envelope.front::after {
+    position: absolute;
+    display: block;
+    width: 12rem;
+    height: 6rem;
+  }
+
+  .envelope.front::after{
+    right: 0;
+  }
+
+  .envelope.back {
+    top: -4rem;
+    width: 10rem;
+    height: 10rem;
+  }
+  
+  .envelope.back::before {
+      display: block;
+      width: 10rem;
+      height: 10remñ
+    }
+
+    .result-message {
+      position: relative;
+      top: 3.5rem;
+    }
+}
