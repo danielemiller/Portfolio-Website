@@ -262,21 +262,21 @@ textarea:focus {
   100%{transform: translateY(-8rem) scale(0.3, 0.5);}
 }
 
-/*
+
 @keyframes pushLetter {
-  0% {transform: translateY(-8rem) scale(0.3, 0.5);}
-  50% {transform: translateY(-8rem) scale(0.3, 0.5);}
-  90% {transform: translateY(-8.5rem) scale(0.3, 0.5);}
-  100% {transform: translateY(-8rem) scale(0.3, 0.5);}
+  0% {transform: translateY(1rem) scale(0.3, 0.5);}
+  50% {transform: translateY(1rem) scale(0.3, 0.5);}
+  90% {transform: translateY(1rem) scale(0.3, 0.5);}
+  100% {transform: translateY(1rem) scale(0.3, 0.5);}
 }
-*/
+
 
 @media screen and (max-width: 768){
 
 }
 
-@media screen and (max-width: 768px){
-
+@media screen and (max-height: 600px){
+  
 }
 
 @media screen and (max-width: 480px) {
@@ -347,11 +347,31 @@ textarea:focus {
   .envelope.back::before {
       display: block;
       width: 10rem;
-      height: 10remñ
+      height: 10rem;
     }
 
-    .result-message {
-      position: relative;
-      top: 3.5rem;
-    }
+  .result-message {
+    margin-top: 2rem;
+  }
+
+  .sent .letter {
+    -webkit-animation: scaleLetter 1s forwards ease-in ,
+               pushLetter 0.5s 1.33s forwards ease-out;
+            animation: scaleLetter 1s forwards ease-in ,
+               pushLetter 0.5s 1.33s forwards ease-out;
+  }
+}
+
+@media screen and (max-width: 355px){
+  .letter {
+    top: -4rem;
+  }
+
+  .envelope {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: -1.5rem 5rem;
+  }
 }
