@@ -3,35 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./contact.css">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://s.pageclip.co/v1/pageclip.css"
+      media="screen"
+    />
     <title>Document</title>
   </head>
   <body>
     <nav class="navbar">
-        <div class="navbar__container">
-            <a href="../index.html" id="navbar__logo">Daniel Miller</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="../index.html" class="navbar__links" id="home-page">Home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="../index.html#about" class="navbar__links" id="about-page">About</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="../index.html#projects" class="navbar__links" id="projects-page">Projects</a>
-                </li>
-                <li class="navbar__btn">
-                    <a href="#" class="button" id="contact-page">Get in Touch</a>
-                </li>
-            </ul>
-        </div> 
+      <div class="navbar__container">
+        <a href="../index.html" id="navbar__logo">Daniel Miller</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="../index.html" class="navbar__links" id="home-page"
+              >Home</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="../index.html#about" class="navbar__links" id="about-page"
+              >About</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a
+              href="../index.html#projects"
+              class="navbar__links"
+              id="projects-page"
+              >Projects</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="#" class="button" id="contact-page">Get in Touch</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <h1 class="contact__header">I'd love to hear from you!</h1>
     <div class="wrapper centered">
@@ -39,15 +52,24 @@
         <div class="side">
           <h1>Contact Me</h1>
           <p>
-            <textarea required placeholder="Your message" name="message"></textarea>
+            <textarea
+              required
+              placeholder="Your message"
+              name="message"
+            ></textarea>
           </p>
         </div>
         <div class="side">
           <p>
-            <input required type="text" placeholder="Your name" name="name"/>
+            <input required type="text" placeholder="Your name" name="name" />
           </p>
           <p>
-            <input required type="email" placeholder="Your email" name="email" />
+            <input
+              required
+              type="email"
+              placeholder="Your email"
+              name="email"
+            />
           </p>
           <p>
             <button type="submit" id="sendLetter">Send</button>
@@ -61,24 +83,37 @@
     <script src="./contact.js"></script>
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script id="mcjs">
+      !(function (c, h, i, m, p) {
+        (m = c.createElement(h)),
+          (p = c.getElementsByTagName(h)[0]),
+          (m.async = 1),
+          (m.src = i),
+          p.parentNode.insertBefore(m, p);
+      })(
+        document,
+        "script",
+        "https://chimpstatic.com/mcjs-connected/js/users/3ba65f02e8c41baedff9d0daf/ff55abb00a646d18badb9d548.js"
+      );
+    </script>
     <script>
-      $('form').on('submit', (e) => {
+      $("form").on("submit", (e) => {
         e.preventDefault();
 
-        const message = $('#message').val().trim();
-        const name = $('#name').val().trim();
-        const email = $('#email').val().trim();;
+        const message = $("#message").val().trim();
+        const name = $("#name").val().trim();
+        const email = $("#email").val().trim();
 
         const data = {
           message,
           name,
-          email
-        }
+          email,
+        };
 
-        $.post('send_email_form', data, function(){
-          console.log('Server received our data');
+        $.post("send_email_form", data, function () {
+          console.log("Server received our data");
         });
-      })
+      });
     </script>
   </body>
 </html>
