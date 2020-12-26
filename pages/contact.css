@@ -219,6 +219,11 @@ textarea:focus {
   right: 0;
   margin: 1rem auto;
 }
+
+.footer__container {
+  margin-top: 28.5rem;
+}
+
 @-webkit-keyframes closeLetter {
    50% {transform: rotateX(-90deg);}
    100% {transform: rotateX(-180deg);}
@@ -360,6 +365,10 @@ textarea:focus {
             animation: scaleLetter 1s forwards ease-in ,
                pushLetter 0.5s 1.33s forwards ease-out;
   }
+}
+
+.footer__container {
+  display: none;
 }
 
 @media screen and (max-width: 355px){

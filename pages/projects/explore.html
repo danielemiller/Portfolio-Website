@@ -1,1 +1,195 @@
-!
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daniel Miller WebDev Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" 
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" 
+        crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <!-- Navbar Section -->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/" id="navbar__logo">Daniel Miller</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#home" class="navbar__links" id="home-page">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#about" class="navbar__links" id="about-page">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#projects" class="navbar__links" id="projects-page">Projects</a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="./pages/contact.html" class="button" id="contact-page">Get in Touch</a>
+                    </li>
+                </ul>
+            </div> 
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="hero" id="home">
+            <div class="hero__container">
+                <h1 class="hero__heading">Find your <span>solution</span></h1>
+                <p class="hero__description">Efficient, Scalable, Customized</p>
+                <p class="hero__content">I am a passionate fullscale developer from Raleigh, NC currently living in Chapel Hill.
+                    I enjoy working on all sorts of projects from small business sites to interactive web applications. If you are an employer seeking
+                    a young professional skilled in <span>design thinking, hypothesis driven development, social coding, agile principles, and container development,</span>
+                         to check out my work and get in contact.
+                </p>
+                <button class="main__btn"><a href="#projects">Explore</a></button>
+                <!-- <video id="videoBG" poster="images/poster.png" autoplay muted loop>
+                    <source src="videos/background-video.mp4" type="video/mp4" />
+                </video> -->
+            </div>  
+        </div>
+
+        <!-- About Section -->
+        <div class="main" id="about">
+            <div class="main__container">
+                <div class="main__img--container">
+                    <div class="main__img--card"><img src="./images/Picture 1.jpg" alt="portrait"></i></div>
+                </div>
+                <div class="main__content">
+                    <h1>Who am I?</h1>
+                    <h2>Solutions you can be proud of</h2>
+                    <p>Throughout my life, I have always placed a focus on lifelong learning and development. Turns out
+                       that is exactly what is needed in the constantly evolving landscape of enterprise software development. As 
+                       I grow as a software engineer, in the face of shifting technologies, languages, and frameworks, I 
+                       am committed to using the latest software development tools, techniques, and approaches to design,
+                       code, test, and provide industry leading solutions.
+                    </p>
+                    <span></span>
+                    <p>Outside of my passion for programming, I enjoy learning foreign languages, bodyweight fitness, and
+                       playing and modding video games!  
+                    </p>
+                   <button class="main__btn"><a href="./pages/contact.html">Contact Me</a></button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Projects Section -->
+        <div class="projects" id="projects">
+            <h1>Projects</h1>
+            <div class="projects__wrapper">
+                <div class="projects__card">
+                    <h2>Travel Website</h2>
+                    <div class="projects__gif--container">
+                        <img class="projects__gif" width="250px" height="200px" src="./videos/travel_showcase.gif" alt="showcase website">
+                    </div>
+                    <p>A modern, professional travel website created using Gatsby, responsive 
+                       design techniques, styled components,and javascript animation.
+                    </p>
+                    <div class="projects__btn"><a href="https://danielemiller.github.io/Travel-Website-React-Gatsby"><button>Visit Website</button></a></div>
+                    <div class="projects__btn"><a href="https://github.com/danielemiller/Travel-Website-React-Gatsby"><button>Source Code</button></a></div>
+                </div>
+                <div class="projects__card">
+                    <h2>Robinhood Clone</h2>
+                    <div class="projects__gif--container">
+                        <img class="projects__gif" width="250px" height="200px" src="./videos/robinhood_showcase.gif" alt="showcase website">
+                    </div>
+                    <p>Clone of popular commision free investing and trading application created with React and Firebase.</p>
+                    <div class="projects__btn"><a href="https://gallant-kalam-87abdd.netlify.app/"><button>Visit Website</button></a></div>
+                    <div class="projects__btn"><a href="https://github.com/danielemiller/Robinhood-Clone-React"><button>Source Code</button></a></div>
+                </div>
+                <div class="projects__card">
+                    <h2>Cryptocurrency API Tool</h2>
+                    <div class="projects__gif--container">
+                        <img class="projects__gif" width="250px" height="200px" src="./videos/crypto_showcase.gif" alt="showcase website">
+                    </div>
+                    <p>Web app built with React that allows users to search through the market pricing data
+                       of hundreds of cryptocurrencies through connecting to and fetching data from an API.
+                    </p>
+                    <div class="projects__btn"><a href="https://danielemiller.github.io/React-Cryptocurrency-API-App"><button>Visit Website</button></a></div>
+                    <div class="projects__btn"><a href="https://github.com/danielemiller/React-Cryptocurrency-API-App"><button>Source Code</button></a></div>
+                </div>
+                <div class="projects__card">
+                    <h2>Yelp Clone</h2>
+                    <div class="projects__gif--container">
+                        <img class="projects__gif" width="250px" height="200px" src="./videos/yelp_showcase.gif" alt="showcase website">
+                    </div>
+                    <p>Fullstack clone of popular restaurant finder and rating application created using the PERN stack.</p>
+                    <div class="projects__btn"><a href="https://yelp-clone-pern.herokuapp.com/"><button>Visit Website</button></a></div>
+                    <div class="projects__btn"><a href="https://github.com/danielemiller/Yelp-Clone-1"><button>Source Code</button></a></div>
+                </div>
+                <div class="projects__card">
+                    <h2>Markdown Blog App</h2>
+                    <div class="projects__gif--container">
+                        <img class="projects__gif" width="250px" height="200px" src="./videos/blog_showcase.gif" alt="showcase website">
+                    </div>
+                    <p>Server rendered markdown blogging application created in Node.js using Express that
+                       connects to a MongoDB Atlas database and is deployed to Heroku.</p>
+                     <div class="projects__btn"><a href="https://express-markdown-blog.herokuapp.com/"><button>Visit Website</button></a></div>
+                     <div class="projects__btn"><a href="https://github.com/danielemiller/BlogApp"><button>Source Code</button></a></div>
+                </div>
+                <div class="projects__card">
+                    <h2>Chorebot</h2>
+                    <div class="projects__gif--container">
+                        <img class="projects__gif" width="250px" height="200px" src="./videos/chorebot_showcase.gif" alt="showcase website">
+                    </div>
+                    <p>Simple, but addictive game built using vanilla JavaScript in which players work to grow
+                       their streak as they attempt to avoid interacting with the ever dreadful Chorebot.
+                    </p>
+                    <div class="projects__btn"><a href="https://danielemiller.github.io/Chorebot_JavaScript_Game"><button>Visit Website</button></a></div>
+                    <div class="projects__btn"><a href="https://danielemiller.github.io/Chorebot_JavaScript_Game"><button>Source Code</button></a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="main" id="contact">
+            <div class="main__container">
+                <div class="main__content">
+                    <h1>Contact Me Today</h1>
+                    <h2>Let's Chat</h2>
+                    <p>See what makes me different</p>
+                    <button class="main__btn"><a href="./pages/contact.html">Get in Touch</a></button>
+                </div>
+                <div class="main__img--container">
+                    <div class="main__img--card" id="card-2"><i class="fas fa-users"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer__container">
+            <div class="footer__links">
+                <div class="footer__link--wrapper">
+                    <div class="footer__link--items">
+                        <h2>Social Media</h2>
+                        <a href="https://www.facebook.com/daniel.e.miller.9">Facebook</a>
+                        <a href="https://github.com/danielemiller">GitHub</a>
+                        <a href="https://www.linkedin.com/in/daniel-ephraim-miller/">LinkedIn</a>
+                        <a href="https://twitter.com/AstrosView">Twitter</a>
+                    </div>    
+                </div>
+            </div>
+            <section class="social__media">
+                <div class="social__media--wrap">
+                    <div class="footer__logo">
+                        <a href="/" id="footer__logo">Daniel E. Miller</a>
+                    </div>
+                    <p class="website__rights">© DEM 2020. All rights reserved</p>
+                    <div class="social__icons">
+                        <a href="https://www.facebook.com/daniel.e.miller.9" class="social__icon--link"><i class="fab fa-facebook" target="_blank"></i></a>
+                        <a href="https://github.com/danielemiller" class="social__icon--link"><i class="fab fa-github" target="_blank"></i></a>
+                        <a href="https://www.linkedin.com/in/daniel-ephraim-miller/" class="social__icon--link"><i class="fab fa-linkedin" target="_blank"></i></a>
+                        <a href="https://twitter.com/AstrosView" class="social__icon--link"><i class="fab fa-twitter" target="_blank"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
