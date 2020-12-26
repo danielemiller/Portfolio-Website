@@ -36,7 +36,8 @@
     </nav>
     <h1 class="contact__header">I'd love to hear from you!</h1>
     <div class="wrapper centered">
-      <form action="https://mailthis.to/danielemiller@live.com" method="POST" class="letter">
+      <form id="myForm" action="https://submit-form.com/ZOuUu7DI" class="letter">
+        <input type="hidden" name="_redirect" value="https://danielemiller.info/" />
         <div class="side">
           <h1>Contact Me</h1>
           <p>
@@ -51,7 +52,7 @@
             <input required type="email" placeholder="Your email" name="email" />
           </p>
           <p>
-            <button type="submit" id="sendLetter">Send</button>
+            <button type="button" onclick="addClass()" id="sendLetter">Send</button>
           </p>
         </div>
       </form>

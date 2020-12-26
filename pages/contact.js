@@ -1,6 +1,7 @@
 function addClass(e) {
-    // e.preventDefault();
+    // e.preventDefault()
     document.body.classList.add("sent");
+    setTimeout(() => document.getElementById("myForm").submit(), 4500);
   }
   
   sendLetter.addEventListener("click", addClass);
