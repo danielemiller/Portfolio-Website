@@ -21,7 +21,7 @@ h1, p {
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -mo-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
   }
 
 h1 {
@@ -31,7 +31,7 @@ h1 {
 
 p button {
   -webkit-text-fill-color:rgb(16, 123, 216);
-  -mo-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 small {
@@ -51,7 +51,7 @@ textarea, input, button {
 }
 textarea, input {
   color: #4e5e72;
-  /* background-color: transparent; */
+  background-color: transparent;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='24'><rect fill='rgb(229, 225, 187)' x='0' y='23' width='10' height='1'/></svg>");
 }
 textarea {
@@ -67,6 +67,30 @@ input[type=text]:invalid, input [type=email]:invalid {
     box-shadow: none;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='24'><rect fill='rgba(240, 132, 114, 0.5)' x='0' y='23' width='10' height='1'/></svg>");
   }
+
+/* Change background in autofill textbox */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+   -webkit-box-shadow: 0 0 0 30px #fafaf2 inset !important;
+}
+
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover, 
+textarea:-webkit-autofill:focus, 
+textarea:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #fafaf2 inset !important;
+}
+
+  /*Change text in autofill textbox*/
+input:-webkit-autofill {
+  -webkit-text-fill-color: #0082c8 !important;
+}
+
+textarea:-webkit-autofill {
+  -webkit-text-fill-color: #0082c8 !important;
+}
 
 button {
  padding: 0.5rem 1rem;
